@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(236, 208, 252);
+    padding: 20px;
+    width: 50vw;
+    /* overflow: hidden; */
+    height: 70vh;
+    text-align: center;
+
+}
+
+.heading{
+    margin: 5px;
+}
+
+.Todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Todo-input input {
+    width: 40vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+.add{
+    width: 41vw;
+}
+
+.submitBts{
+    cursor: pointer;
+    height: 30px;
+    background-color: rgb(121, 10, 185);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.todos {
+    padding: 5px;
+    background-color: rgb(94, 63, 97);
+    height: 45vh;
+    border-radius: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+      
+}
+
+.left-todo-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(232, 192, 255);
+    /* background-color: aqua; */
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;  
+}
+.incom{
+    text-decoration: line-through;
+}

@@ -1,0 +1,23 @@
+.navbar {
+    padding: 30px;
+    height: 30px;
+    color: white;
+    background-color: rgb(117, 56, 145);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.navbar ul li:hover{
+    color: rgb(214, 146, 253);
+}
