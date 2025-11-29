@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import './App.css'
 
@@ -6,6 +6,7 @@ function App() {
   const [editIndex, setEditIndex] = useState(null)
   const [todo, setTodo] = useState("")
   const [todos, setTodos] = useState([])
+  const focuse = useRef()
 
 
   // ✅ Load todos from localStorage jab component mount ho
@@ -32,6 +33,7 @@ function App() {
   }
 
   const HeadingEdit = (index) => {
+    focuse.current.focus()
     setEditIndex(index)
     setTodo(todos[index].todo)
     // saveToLS()
@@ -71,7 +73,7 @@ function App() {
           <div className="Addtodo">
             <h2 className='heading'>Add Task</h2>
             <div className='Todo-input'>
-              <input onChange={HeadingChange} value={todo} type="text" />
+              <input ref={focuse} onChange={HeadingChange} value={todo} type="text" />
               {editIndex !== null ? (
                 <button onClick={HeadingUpdate} className='submitBts add'>Update</button>
               ) : (
